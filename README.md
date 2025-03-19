@@ -10,6 +10,63 @@
 ## Overview
 This project is an experimental attempt to replicate deep search capabilities similar to frontier models like Grok-3 and OpenAI's models, using the DeepSeek R1 model via Groq's API. The results have been surprisingly positive, demonstrating that even with simpler models, we can achieve meaningful research capabilities.
 
+## Installation Guide
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package installer)
+- Git
+- A Groq API key (get it from [Groq's website](https://groq.com))
+- A SerpAPI key (get it from [SerpAPI's website](https://serpapi.com))
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/shiv207/Deepsearch-clone-opensource.git
+cd Deepsearch-clone-opensource
+```
+
+### Step 2: Create and Activate Virtual Environment (Optional but Recommended)
+```bash
+# On Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Set Up Environment Variables
+Create a `.env` file in the root directory with your API keys:
+```plaintext
+GROQ_API_KEY=your_groq_api_key_here
+SERPAPI_KEY=your_serpapi_key_here
+```
+
+### Step 5: Verify Installation
+```bash
+python main.py
+```
+When prompted, enter a research query to test the system.
+
+### Troubleshooting
+- If you encounter SSL certificate errors, ensure your Python installation has proper SSL certificates.
+- If you get dependency conflicts, try creating a fresh virtual environment.
+- For NLTK-related errors, run:
+  ```bash
+  python -c "import nltk; nltk.download('punkt')"
+  ```
+
+### Note on API Keys
+- Never commit your `.env` file to version control
+- Keep your API keys secure and don't share them
+- Monitor your API usage to avoid unexpected charges
+
 ## Key Features
 - Uses DeepSeek R1 Distill Qwen 32B model through Groq's API
 - Integrates with SerpAPI for comprehensive web search capabilities
