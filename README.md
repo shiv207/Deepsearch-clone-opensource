@@ -1,5 +1,12 @@
 # Deep Research Project
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![DeepSeek](https://img.shields.io/badge/Model-DeepSeek%20R1-green.svg)](https://groq.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/shiv207/Deepsearch-clone-opensource/releases)
+
+**Tags:** `#ai-research` `#deep-learning` `#nlp` `#semantic-search` `#groq` `#deepseek` `#serpapi` `#python` `#research-tool` `#information-retrieval` `#web-scraping` `#content-analysis` `#machine-learning` `#text-analysis` `#open-source`
+
 ## Overview
 This project is an experimental attempt to replicate deep search capabilities similar to frontier models like Grok-3 and OpenAI's models, using the DeepSeek R1 model via Groq's API. The results have been surprisingly positive, demonstrating that even with simpler models, we can achieve meaningful research capabilities.
 
